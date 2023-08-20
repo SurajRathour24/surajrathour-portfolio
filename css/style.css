@@ -14,7 +14,7 @@
 
 /* on scroll styling  */
 #header.sticky {
-	background: #232323;
+	background: var(--secondary-bg-color);
 }
 
 #header .logo {
@@ -22,6 +22,15 @@
   color: var(--text-color);
   font-weight: 600;
 }
+.navbar{
+  transition: .5s;
+
+}
+.navbar.active {
+	left: 0 !important;
+	transition-delay: 0s;
+}
+
 #navbar ul li {
   list-style: none;
   padding: 10px;

@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1200px) {
+  html{
+    font-size: 55%;
+  }
   .container {
     width: 100%;
     padding: 0 20px;
@@ -27,9 +30,29 @@
   .contact form .input-box .input-field {
     width: 100% !important;
   }
+
+
+  /* responsive menu  */
+  #navbar {
+    display: block;
+    position: absolute;
+    left: -190%;
+    width: 100%;
+    padding: 1rem 4%;
+    background: var(--secondary-bg-color);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+    top: 7rem;
+  }
+  #navbar ul {
+    display: block;
+  }
+
 }
 
 @media only screen and (max-width: 576px) {
+  html{
+    font-size: 50%;
+  }
   #banner-content h1 {
     font-size: 3rem !important;
     line-height: 40px !important;
@@ -38,7 +61,6 @@
     padding: 7rem 0px;
   }
   .header {
-    background-color: #000 !important;
     z-index: 9999999 !important;
   }
 }
