@@ -1,0 +1,95 @@
+@import "utilities.css";
+@import "mediaquery.css";
+
+/*============== header style  ==========*/
+.header {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 2rem 0;
+}
+#header .logo {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+#navbar ul li {
+  list-style: none;
+  padding: 10px;
+}
+#navbar ul li a {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: 0.5s;
+}
+#navbar ul li a:hover,
+#navbar ul li .active {
+  color: var(--main-color);
+}
+
+/* box-menu icon  */
+#menu-icon {
+  font-size: 3rem;
+  color: var(--text-color);
+  cursor: pointer;
+  display: none;
+}
+
+/* banner home section design style  */
+.type-text {
+  position: relative;
+}
+
+.type-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -5px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--primary-color);
+  animation: type 0.5s infinite;
+  -webkit-animation: type 0.5s infinite;
+}
+
+@-webkit-keyframes type {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes type {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+#main-banner .banner-img img {
+  width: 500px;
+}
+#banner-content {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+#banner-content h1 {
+  font-size: 5rem;
+  line-height: 60px;
+}

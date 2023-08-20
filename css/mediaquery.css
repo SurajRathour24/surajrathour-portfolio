@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+/* media/ responsive for small dstp  */
+
+@media only screen and (max-width: 767px) {
+  #navbar {
+    display: none;
+  }
+  .portf-d-flex{
+    flex-direction: column;
+}
+#header .portf-d-flex{
+    flex-direction: inherit;
+}
+#menu-icon {
+    display: block !important;
+  }
+}
